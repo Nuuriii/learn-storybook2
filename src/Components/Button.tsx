@@ -11,9 +11,7 @@ interface ButtonProps {
    size?: "small" | "medium" | "large";
    //properti untuk mengatur nama tombol
    label: string;
-   /**
-    * Optional click handler
-    */
+   //properti untuk mengatur event ketika tombol diklik
    onClick?: () => void;
 }
 
