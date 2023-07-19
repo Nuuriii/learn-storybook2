@@ -1,44 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
+//configure Meta data dengan ekspor default
 
+//import Metadata dari Storybook
+import type { Meta } from "@storybook/react";
+
+//import Button dari Component Button
 import { Button } from "../Components/Button";
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-const meta = {
-   title: "Example/Button",
+//gunakan metadata untuk mengatur component mana yang dipilih
+const meta: Meta<typeof Button> = {
    component: Button,
-   tags: ["autodocs"],
-   argTypes: {
-      backgroundColor: { control: "color" },
-   },
-} satisfies Meta<typeof Button>;
+};
 
 export default meta;
-type Story = StoryObj<typeof meta>;
-
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary: Story = {
-   args: {
-      primary: true,
-      label: "Button",
-   },
-};
-
-export const Secondary: Story = {
-   args: {
-      label: "Button",
-   },
-};
-
-export const Large: Story = {
-   args: {
-      size: "large",
-      label: "Button",
-   },
-};
-
-export const Small: Story = {
-   args: {
-      size: "small",
-      label: "Button",
-   },
-};
+//end configure Meta data
