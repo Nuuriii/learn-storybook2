@@ -1,9 +1,9 @@
-import "./button.css";
+//import file css untuk styling
+import "../css/button.css";
 
+//definisikan tipe properti yang dapat diterima Component Button
 interface ButtonProps {
-   /**
-    * Is this the principal call to action on the page?
-    */
+   //properti untuk
    primary?: boolean;
    /**
     * What background color to use
