@@ -5,17 +5,11 @@ import "../css/button.css";
 interface ButtonProps {
    //properti untuk
    primary?: boolean;
-   /**
-    * What background color to use
-    */
+   //properti yang menyimpan warna background apa yang dipakai
    backgroundColor?: string;
-   /**
-    * How large should the button be?
-    */
+   //properti untuk mengatur ukuran, hanya terdapat 3 pilihan
    size?: "small" | "medium" | "large";
-   /**
-    * Button contents
-    */
+   //properti untuk mengatur nama tombol
    label: string;
    /**
     * Optional click handler
