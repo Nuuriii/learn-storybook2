@@ -25,6 +25,7 @@ export const Button = ({
    label,
    ...props
 }: ButtonProps) => {
+   //variable yang digunakan untuk menentukan Class css apa yang akan digunakan berdasarkan property primary
    const mode = primary
       ? "storybook-button--primary"
       : "storybook-button--secondary";
