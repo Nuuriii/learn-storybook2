@@ -23,3 +23,23 @@ const meta: Meta<typeof Button> =
          backgroundColor: { control: "color" },
       },
    };
+
+//baris ini meng-ekspor variable meta yang berisi metadata dan konfigurasi untuk cerita component
+export default meta;
+
+//baris ini digunakan untuk mendefinisikan tipe 'Story' menggunakan 'StoryObj' yang digunakan untuk mendeklarasikan story Component yang akan ditampilkan di Storybook
+type Story = StoryObj<typeof Button>;
+
+//saatnya menulis Story!!!.....
+export const Primary: Story = {
+   args: {
+      primary: true,
+      label: "Button",
+   },
+};
+
+export const Secondary: Story = {
+   args: {
+      label: "Click Me",
+   },
+};
