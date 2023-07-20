@@ -2,3 +2,21 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "../Components/Button";
+
+//kode dibawah ini tidak digunakan untuk membuat story secara langsung, tetapi kode ini digunakan untuk mengatur dan mempersiapkan Story sehingga sehingga story dapat ditampilkan dengan benar di dalam StoryBook
+
+//variable ini menggunakan utilitas Storybook yaitu meta untuk mendefinisikan metadata dari story
+const meta: Meta<typeof Button> =
+   //typeof digunakan untuk menunjukkan kalau meta berlaku ke component Button
+   {
+      title: "Example/Button",
+      component: Button,
+      //property parameter digunakan untuk memberikan konfigurasi tambahan ke Story
+      parameters: {
+         layout: "centered",
+      },
+      tags: ["autodocs"],
+      argTypes: {
+         backgroundColor: { control: "color" },
+      },
+   };
