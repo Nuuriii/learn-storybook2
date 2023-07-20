@@ -30,7 +30,7 @@ export default meta;
 //baris ini digunakan untuk mendefinisikan tipe 'Story' menggunakan 'StoryObj' yang digunakan untuk mendeklarasikan story Component yang akan ditampilkan di Storybook
 type Story = StoryObj<typeof Button>;
 
-//saatnya menulis Story!!!.....
+//yee!!!... saatnya menulis Story!!!.....
 export const Primary: Story = {
    args: {
       primary: true,
