@@ -35,6 +35,7 @@ export const Button = ({
             `storybook-button--${size}`,
             mode,
          ].join(" ")}
+         //warna background sesuai dengan yang disimpan di props backgroundColor
          style={{ backgroundColor }}
          {...props}
       >
