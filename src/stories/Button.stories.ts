@@ -13,10 +13,13 @@ const meta: Meta<typeof Button> =
       component: Button,
       //property parameter digunakan untuk memberikan konfigurasi tambahan ke Story
       parameters: {
+         //property layout digunakan untuk menentukan posisi component di canvas Storybook
          layout: "centered",
       },
       tags: ["autodocs"],
+      //property dibawah ini digunakan untuk mengatur konfigurasi argument(args) di dalam story
       argTypes: {
+         //ini untuk mengatur warna latar belakang tombol
          backgroundColor: { control: "color" },
       },
    };
