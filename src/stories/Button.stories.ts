@@ -43,3 +43,17 @@ export const Secondary: Story = {
       label: "Click Me",
    },
 };
+
+export const Large: Story = {
+   args: {
+      size: "large",
+      label: "Large",
+   },
+};
+
+export const Small: Story = {
+   args: {
+      size: "small",
+      label: "Small",
+   },
+};
