@@ -9,4 +9,23 @@ interface ButtonProps {
    backgroundColor?: string;
    //properti untuk mengatur ukuran button
    size?: "small" | "medium" | "large";
+   //properti untuk mengatur nama button
+   label: string;
+   //properti untuk mengatur sebuah event
+   onClick?: () => void;
 }
+
+//primary UI component for user interaction
+
+export const Button = ({
+   primary = false,
+   size = "medium",
+   backgroundColor,
+   label,
+   ...props
+}: ButtonProps) => {
+   //buat variable untuk mengecek apakah primary bernilai true atau false
+   const mode = primary
+      ? "storybook-button--primary"
+      : "storybook-button--secondary";
+};
