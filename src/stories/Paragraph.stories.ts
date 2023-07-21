@@ -14,3 +14,10 @@ const meta: Meta<typeof Paragraph> = {
 
 export default meta;
 type Story = StoryObj<typeof Paragraph>;
+
+export const Primary: Story = {
+   args: {
+      primary: true,
+      label: "Button",
+   },
+};
