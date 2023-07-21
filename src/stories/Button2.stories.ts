@@ -39,3 +39,33 @@ export const Secondary: Story = {
 };
 
 //the story button is sm/small
+export const Small: Story = {
+   args: {
+      size: "sm",
+      label: "ini small",
+   },
+};
+
+//the story button is md/medium
+export const Medium: Story = {
+   args: {
+      size: "md",
+      label: "ini Medium",
+   },
+};
+
+//the story button is lg/large
+export const Large: Story = {
+   args: {
+      size: "lg",
+      label: "ini Large",
+   },
+};
+
+//the story button is xl/extra large
+export const ExtraLarge: Story = {
+   args: {
+      size: "xl",
+      label: "Ini extra besar",
+   },
+};
