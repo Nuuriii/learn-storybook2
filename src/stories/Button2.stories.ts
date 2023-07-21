@@ -6,7 +6,7 @@ import { Button2 } from "../Components/Button2";
 
 //configure Story
 const configStory = {
-   title: "Example/Button",
+   title: "Example/Button2",
    component: Button2,
    parameters: {
       layout: "centered",
@@ -21,3 +21,11 @@ const configStory = {
 //export config story
 export default configStory;
 type Story = StoryObj<typeof configStory>;
+
+//writing story
+export const Primary: Story = {
+   args: {
+      primary: true,
+      label: "Click me",
+   },
+};
