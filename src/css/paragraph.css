@@ -1,0 +1,24 @@
+.sb-paragraph {
+   font-family: "Courier New", Courier, monospace;
+   font-weight: 300;
+}
+
+.sb-paragraph--primary {
+   color: green;
+}
+
+.sb-paragraph--secondary {
+   color: brown;
+}
+
+.sb-paragraph--small {
+   font-size: 12px;
+}
+
+.sb-paragraph--medium {
+   font-size: 14px;
+}
+
+.sb-paragraph--large {
+   font-size: 16px;
+}

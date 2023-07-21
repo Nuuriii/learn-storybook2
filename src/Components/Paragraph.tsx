@@ -1,3 +1,5 @@
+import "../css/paragraph.css";
+
 interface ParagraphProps {
    primary?: boolean;
    color?: string;
