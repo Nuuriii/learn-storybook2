@@ -8,17 +8,20 @@
 }
 
 .sb-paragraph--secondary {
-   color: brown;
+   color: gray;
 }
 
 .sb-paragraph--small {
    font-size: 12px;
+   color: blue;
 }
 
 .sb-paragraph--medium {
    font-size: 14px;
+   color: orange;
 }
 
 .sb-paragraph--large {
    font-size: 16px;
+   color: purple;
 }
