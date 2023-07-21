@@ -23,9 +23,19 @@ export default configStory;
 type Story = StoryObj<typeof configStory>;
 
 //writing story
+//the story button is Primary
 export const Primary: Story = {
    args: {
       primary: true,
-      label: "Click me",
+      label: "Primary",
    },
 };
+
+//the story button is secondary
+export const Secondary: Story = {
+   args: {
+      label: "Secondary",
+   },
+};
+
+//the story button is sm/small
