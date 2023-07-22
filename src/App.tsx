@@ -7,7 +7,21 @@ function App() {
 
    return (
       <>
-         <Button label='Button' onClick={() => {}} primary />
+         <p>{count}</p>
+         <Button
+            label='Tambah'
+            onClick={() => {
+               setCount(count + 1);
+            }}
+            primary
+         />
+         <Button
+            label='Kurangi'
+            onClick={() => {
+               setCount(count - 1);
+            }}
+            primary
+         />
       </>
    );
 }
