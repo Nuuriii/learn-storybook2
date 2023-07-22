@@ -1,8 +1,12 @@
+//import css
+import "../css/button2.css";
+
 //create interface for configure styling
 //feature:[change mode, change background, change size, change name element]
 interface ButtonProps2 {
    primary?: boolean;
    background?: string;
+   borderRadius?: string;
    color?: string;
    size?: "sm" | "md" | "lg" | "xl";
    label?: string;
@@ -13,6 +17,7 @@ export const Button2 = ({
    primary = false,
    size = "md",
    background,
+   borderRadius,
    color,
    label,
    ...props
@@ -21,7 +26,7 @@ export const Button2 = ({
    return (
       <button
          className={["sb-button", `sb-button--${size}`, mode].join(" ")}
-         style={{ background, color }}
+         style={{ background, color, borderRadius }}
          {...props}
       >
          {label}

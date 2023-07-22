@@ -15,6 +15,7 @@ const configStory = {
    argTypes: {
       background: { control: "color" },
       color: { control: "color" },
+      borderRadius: { control: "size" },
    },
 } satisfies Meta<typeof Button2>;
 
