@@ -81,6 +81,7 @@ Button3.propTypes = {
     * What background color to use
     */
    backgroundColor: PropTypes.string,
+   color: PropTypes.string,
    /**
     * How large should the button be?
     */
