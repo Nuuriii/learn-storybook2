@@ -1,6 +1,6 @@
 // ./src/stories/button.js
 
-import PropTypes, { any } from "prop-types";
+import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
 interface ButtonProps {
@@ -12,7 +12,7 @@ interface ButtonProps {
    onClick: () => void;
 }
 
-const getVariantStyles = ({ primary = false, ...props }: ButtonProps) =>
+const getVariantStyles = ({ primary = false }: ButtonProps) =>
    primary
       ? css`
            color: white;
@@ -24,7 +24,7 @@ const getVariantStyles = ({ primary = false, ...props }: ButtonProps) =>
            box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
         `;
 
-const getSizeStyles = ({ size = "medium", ...props }: ButtonProps) => {
+const getSizeStyles = ({ size = "medium" }: ButtonProps) => {
    switch (size) {
       case "small": {
          return css`

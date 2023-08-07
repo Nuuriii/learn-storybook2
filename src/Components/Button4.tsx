@@ -1,25 +1,23 @@
-import React from "react";
-import styled from "styled-components";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 
 interface ButtonProps {
-   children: string;
    primary?: boolean;
+   backgroundColor?: string;
+   size?: "small" | "medium" | "large";
+   color?: "string";
+   label?: string;
    onClick: () => void;
 }
 
-const ButtonStyle = styled.button<ButtonProps>`
-   background-color: ${(props) => (props.primary ? "blue" : "gray")};
-   color: white;
-   padding: 10px 20px;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-`;
-
-export const Button = ({ primary, onClick, children }: ButtonProps) => {
-   return (
-      <ButtonStyle primary={primary} onClick={onClick}>
-         {children}
-      </ButtonStyle>
-   );
-};
+const getVariantStyles = ({ primary = false }: ButtonProps) =>
+   primary
+      ? css`
+           color: white;
+           background-color: #0f2635;
+        `
+      : css`
+           color: #333;
+           background-color: transparent;
+           box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+        `;
