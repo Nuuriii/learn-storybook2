@@ -21,3 +21,26 @@ const getVariantStyles = ({ primary = false }: ButtonProps) =>
            background-color: transparent;
            box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
         `;
+
+const getSizeStyles = ({ size = "medium" }: ButtonProps) => {
+   switch (size) {
+      case "small": {
+         return css`
+            font-size: 12px;
+            padding: 10px 16px;
+         `;
+      }
+      case "large": {
+         return css`
+            font-size: 16px;
+            padding: 12px 24px;
+         `;
+      }
+      default: {
+         return css`
+            font-size: 14px;
+            padding: 11px 20px;
+         `;
+      }
+   }
+};
