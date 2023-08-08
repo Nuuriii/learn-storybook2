@@ -44,3 +44,43 @@ const getSizeStyles = ({ size = "medium" }: ButtonProps) => {
       }
    }
 };
+
+// Primary UI component for user interaction
+
+const MyButtons = styled.button`
+   font-family: "Nunito Sans", "Helvetica Neue", Arial, sans-serif;
+   font-weight: 700;
+   border: 0;
+   border-radius: 3em;
+   cursor: pointer;
+   display: inline-block;
+   line-height: 1;
+
+   ${(props: any) => getVariantStyles(props)}
+   ${(props: any) => getSizeStyles(props)}
+   ${({ backgroundColor }: any) =>
+      backgroundColor &&
+      css`
+         background-color: ${backgroundColor};
+      `}
+`;
+
+export const Button4 = ({ label, ...rest }: any) => (
+   <MyButtons {...rest}> {label}</MyButtons>
+);
+
+Button4.PropTypes = {
+   primary: PropTypes.bool,
+   backgroundColor: PropTypes.string,
+   color: PropTypes.string,
+   size: PropTypes.oneOf(["small", "medium", "large"]),
+   label: PropTypes.string.isRequired,
+   onClick: PropTypes.func,
+};
+
+Button4.defaultProps = {
+   backgroundColor: null,
+   color: null,
+   primary: "medium",
+   onClick: undefined,
+};
